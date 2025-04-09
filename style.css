@@ -159,3 +159,72 @@ input:hover{
     transform: scale(1.12);
 }
 
+/* Estilos para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    #container-login {
+        height: 80vh;
+        width: 90vw;
+        border-radius: 15px;
+    }
+
+    #login {
+        font-size: 1.2rem;
+    }
+
+    input {
+        width: 80%;
+        height: 6%;
+    }
+
+    #botao-cadastro {
+        margin-left: 0;
+        width: 50%;
+        height: 8%;
+    }
+
+    #VerCadastro {
+        width: 50%;
+        height: 8%;
+    }
+
+    #divCadastro {
+        width: 90vw;
+        height: 50vh;
+        right: 5px;
+        gap: 5%;
+    }
+
+    #btnRemover {
+        width: 50%;
+        height: 10%;
+    }
+}
+
+/* Estilos para telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    #container-login {
+        height: 90vh;
+        width: 95vw;
+        border-radius: 10px;
+    }
+
+    #login {
+        font-size: 1rem;
+    }
+
+    input {
+        width: 90%;
+        height: 8%;
+    }
+
+    #botao-cadastro, #VerCadastro, #btnRemover {
+        width: 70%;
+        height: 10%;
+    }
+
+    #divCadastro {
+        width: 95vw;
+        height: 60vh;
+        gap: 5%;
+    }
+}
