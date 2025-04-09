@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    width: 100vw;
+    background-color: #4682B4;
+    
+}
+
+#container-login{
+    position: relative;
+    background-color: #B0E0E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 30vw;
+    border-radius:20px; 
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#container-login:hover{
+    transform:scale(1.10);
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.3);
+}
+#login  {
+    position: absolute;
+    top: 15%;
+    color: #2F4F4F;
+    font-size: 1.5rem;
+    font-weight: bold;
+   
+    
+}
+input{
+    margin-top: 5%;
+    width: 50%;
+    height: 5%;
+    border-radius: 7px;
+    border: none;
+}
+input:hover{
+    background-color: #D3D3D3;
+    scale: 1.05;
+}
+#botao-cadastro{
+    /*posição do botao*/
+    margin-top: 5%;
+    margin-left: 30%;
+    border: none;
+    border-radius: 5px;
+    height:7%;
+    width: 20%;
+
+    /*estilização do botao*/
+    background-color:#007FFF;
+    transition: transform 0.3s ease;
+
+}
+#botao-cadastro:hover{
+    background-color:#005ebb;
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+
+#VerCadastro{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border: none;
+    border-radius: 5px;
+    height:7%;
+    width: 20%;
+    background-color:#ffffff ;
+    transition: transform 0.3s ease;
+}
+
+#VerCadastro:hover{
+    background-color: #1C1C1C;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.20);
+}
+
+#divCadastro{
+    position: absolute;
+    right: 30px;
+    height: 35vh;
+    width: 30vw;
+
+    border: none;
+    border-radius: 20px;
+    background-color: #5F9EA0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
+    transform: translateY(0);
+    opacity: 1;
+}
+.esconder{
+    opacity: 0 !important;
+    transform: translateY(-100%) !important;
+    pointer-events: none !important;
+
+}
+
+#divCadastro:hover{
+    transform: scale(1.10);
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.3);
+}
+#divCadastro h1{
+    font-family: 'Roboto', sans-serif;;
+    font-size: 1rem;
+}
+
+
+
+
+
+#btnRemover{
+    position: absolute;
+    bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    height:15%;
+    width: 20%;
+    background-color:#ffffff ;
+    transition: transform 0.3s ease;
+}
+
+#btnRemover:hover{
+    background-color: #1C1C1C;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.12);
+}
+
